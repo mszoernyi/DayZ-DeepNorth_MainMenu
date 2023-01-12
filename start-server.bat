@@ -1,0 +1,1 @@
+start /D "C:\Program Files (x86)\Steam\steamapps\common\DayZ" DayZDiag_x64.exe "-mod=C:\Users\Shadow\Documents\_Workspace_\Packed\@DeepNorth_MainMenu" -filePatching -server -config=serverDZ.cfg "-profiles=C:\Program Files (x86)\Steam\steamapps\common\DayZ\Profiles"
