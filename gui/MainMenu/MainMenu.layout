@@ -1,0 +1,481 @@
+FrameWidgetClass rootFrame {
+ position 0 0
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ {
+  FrameWidgetClass settings_panel_root {
+   ignorepointer 1
+   position 100 80
+   size 260 40
+   halign right_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   priority 3
+   {
+    ButtonWidgetClass discord_button {
+     color 0 0 0 0.549
+     position 0.5 0
+     size 37 37
+     halign right_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass discord_button_icon {
+       ignorepointer 1
+       size 40 40
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 1
+       imageTexture "{88AB5AE78BEDE48B}DeepNorth_MainMenu/gui/MainMenu/Images/discord.edds"
+       mode opaque
+       "src alpha" 0
+       stretch 1
+       filter 1
+      }
+     }
+    }
+    ButtonWidgetClass settings_button {
+     color 1 1 1 0
+     position 0.25 0
+     size 37 37
+     halign right_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect inside
+     style Empty
+     "no focus" 0
+     "next left" "news_main"
+     "next right" "exit_button"
+     "next up" "play"
+     "next down" "customize_character"
+     font "gui/fonts/sdf_MetronLight24"
+     switch normal
+     {
+      ImageWidgetClass settings_button_image {
+       ignorepointer 1
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       image0 "set:dayz_gui image:settings"
+       mode blend
+       "src alpha" 1
+      }
+     }
+    }
+    ButtonWidgetClass exit_button {
+     color 1 1 1 0
+     size 37 37
+     halign right_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect inside
+     style Empty
+     "no focus" 0
+     "next left" "settings_button"
+     "next right" "play"
+     "next up" "play"
+     "next down" "customize_character"
+     font "gui/fonts/sdf_MetronLight24"
+     switch normal
+     {
+      ImageWidgetClass exit_button_image {
+       ignorepointer 1
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       image0 "set:dayz_gui image:exit"
+       mode blend
+       "src alpha" 1
+      }
+     }
+    }
+   }
+  }
+  GridSpacerWidgetClass stats_root {
+   ignorepointer 1
+   color 0 0 0 0.5882
+   position 100 0
+   size 600 400
+   halign right_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style Colorable
+   Padding 0
+   Margin 0
+   Columns 2
+   {
+    FrameWidgetClass TimeSurvived {
+     ignorepointer 1
+     color 0.3059 0.3059 0.3059 1
+     position 10 10
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      TextWidgetClass TimeSurvivedValue {
+       ignorepointer 1
+       position 0.2 0.3
+       size 0.6 0.3
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       font "gui/fonts/etelkatextpro"
+       "size to text h" 0
+       "size to text v" 0
+       "text valign" center
+      }
+      TextWidgetClass TimeSurvivedLabel {
+       ignorepointer 1
+       color 1 1 1 0.7059
+       position 0.2 0
+       size 0.6 0.4
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "#main_menu_time"
+       font "gui/fonts/etelkatextpro"
+       text_proportion 0.4
+      }
+     }
+    }
+    FrameWidgetClass PlayersKilled {
+     ignorepointer 1
+     size 48 48
+     halign right_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      TextWidgetClass PlayersKilledValue {
+       ignorepointer 1
+       position 0.2 0.3
+       size 0.6 0.3
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       font "gui/fonts/etelkatextpro"
+       "text valign" center
+      }
+      TextWidgetClass PlayersKilledLabel {
+       ignorepointer 1
+       color 1 1 1 0.7059
+       position 0.2 0
+       size 0.6 0.4
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "#main_menu_players_killed"
+       font "gui/fonts/etelkatextpro"
+       text_proportion 0.4
+      }
+     }
+    }
+    FrameWidgetClass InfectedKilled {
+     ignorepointer 1
+     position 10 10
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      TextWidgetClass InfectedKilledValue {
+       ignorepointer 1
+       position 0.2 0.3
+       size 0.6 0.3
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       font "gui/fonts/etelkatextpro"
+       "text valign" center
+      }
+      TextWidgetClass InfectedKilledLabel {
+       ignorepointer 1
+       color 1 1 1 0.7059
+       position 0.2 0
+       size 0.6 0.4
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "#main_menu_infected_killed"
+       font "gui/fonts/etelkatextpro"
+       text_proportion 0.4
+      }
+     }
+    }
+    FrameWidgetClass DistanceTraveled {
+     ignorepointer 1
+     position 10 10
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      TextWidgetClass DistanceTraveledValue {
+       ignorepointer 1
+       position 0.2 0.3
+       size 0.6 0.3
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       font "gui/fonts/etelkatextpro"
+       "text valign" center
+      }
+      TextWidgetClass DistanceTraveledLabel {
+       ignorepointer 1
+       color 1 1 1 0.7059
+       position 0.2 0
+       size 0.6 0.4
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "Distance traveled by foot"
+       font "gui/fonts/etelkatextpro"
+       text_proportion 0.4
+      }
+     }
+    }
+    FrameWidgetClass LongRangeShot {
+     ignorepointer 1
+     position 10 10
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      TextWidgetClass LongRangeShotValue {
+       ignorepointer 1
+       position 0.2 0.3
+       size 0.6 0.3
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       font "gui/fonts/etelkatextpro"
+       "text valign" center
+      }
+      TextWidgetClass LongRangeShotLabel {
+       ignorepointer 1
+       color 1 1 1 0.7059
+       position 0.2 0
+       size 0.8 0.4
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "Best long range hit of a survivor"
+       font "gui/fonts/etelkatextpro"
+       text_proportion 0.4
+      }
+     }
+    }
+   }
+  }
+  TextWidgetClass character_name {
+   ignorepointer 1
+   position 100 -230
+   size 580 40
+   halign right_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   font "gui/fonts/etelkatextpro"
+   "text valign" center
+  }
+  PanelWidgetClass play_root {
+   ignorepointer 1
+   color 0.3059 0.1686 0.5294 0.7843
+   position 200 200
+   size 500 80
+   halign right_ref
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style rover_sim_colorable
+   {
+    ButtonWidgetClass play {
+     color 0.3059 0.1686 0.5294 0.7843
+     position 0 0
+     size 1 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     {
+      TextWidgetClass play_title {
+       ignorepointer 1
+       position 0 0
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       text "PLAY"
+       text_proportion 0.5
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+   }
+  }
+  ImageWidgetClass logo {
+   ignorepointer 1
+   position 100 80
+   size 229 200
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   imageTexture "{50CF588A616BCF78}DeepNorth_MainMenu/gui/MainMenu/Images/logo.edds"
+   mode blend
+   "src alpha" 1
+   "no wrap" 1
+   stretch 1
+  }
+  GridSpacerWidgetClass copyright {
+   ignorepointer 1
+   position 10 10
+   size 500 60
+   halign right_ref
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   Padding 0
+   Margin 0
+   Columns 1
+   Rows 2
+   {
+    TextWidgetClass version {
+     ignorepointer 1
+     size 1 30
+     halign right_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     font "gui/fonts/etelkatextpro"
+     text_proportion 0.6
+     "text halign" right
+     "text valign" center
+    }
+    TextWidgetClass deepnorth {
+     ignorepointer 1
+     size 1 30
+     halign right_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     text "#c_modded"
+     font "gui/fonts/etelkatextpro"
+     text_proportion 0.6
+     "text halign" right
+     "text valign" center
+    }
+   }
+  }
+  PanelWidgetClass news_panel {
+   ignorepointer 1
+   color 0 0 0 0.549
+   position 100 0
+   size 600 400
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   scaled 1
+   style editor_quad_dark
+   {
+    TextWidgetClass new_heading {
+     ignorepointer 1
+     size 0.95 48
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     style Bold
+     text "News Date Placeholder"
+     "text valign" center
+    }
+    MultilineTextWidgetClass news_text {
+     ignorepointer 1
+     size 0.95 350
+     halign center_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     scaled 1
+     text "Placeholder"
+     font "gui/fonts/amorserifpro"
+     "exact text" 0
+     text_proportion 0.3
+     "size to text h" 0
+     "size to text v" 0
+     wrap 1
+    }
+   }
+  }
+ }
+}

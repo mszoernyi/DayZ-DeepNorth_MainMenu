@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{50CF588A616BCF78}DeepNorth_MainMenu/gui/MainMenu/Images/logo.edds"
+ Author "shadow-5b0ft2fs"
+ ChangeDate 1854221865
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "logo.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}
