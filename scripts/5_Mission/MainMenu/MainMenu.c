@@ -17,8 +17,8 @@ modded class MainMenu extends UIScriptedMenu
 		m_SettingsButton			= layoutRoot.FindAnyWidget( "settings_button" );
 		m_Exit						= layoutRoot.FindAnyWidget( "exit_button" );
 		discord_button				= layoutRoot.FindAnyWidget( "discord_button" );
-		m_NewsText					= MultilineTextWidget.Cast( layoutRoot.FindAnyWidget( "news_text" ) );
-		m_NewsHeading				= TextWidget.Cast( layoutRoot.FindAnyWidget( "news_heading" ) );
+		//m_NewsText					= MultilineTextWidget.Cast( layoutRoot.FindAnyWidget( "news_text" ) );
+		//m_NewsHeading				= TextWidget.Cast( layoutRoot.FindAnyWidget( "news_heading" ) );
 
 		m_Version					= TextWidget.Cast( layoutRoot.FindAnyWidget( "version" ) );
 		m_Stats						= new MainMenuStats( layoutRoot.FindAnyWidget( "stats_root" ) );		
@@ -33,8 +33,8 @@ modded class MainMenu extends UIScriptedMenu
 		
 		m_PlayerName				= TextWidget.Cast( layoutRoot.FindAnyWidget("character_name") );
 
-		m_NewsHeading.SetText(m_ConfigManager.GetNewsDate());
-		m_NewsText.SetText(m_ConfigManager.GetNewsText());
+		//m_NewsHeading.SetText(m_ConfigManager.GetNewsDate());
+		//m_NewsText.SetText(m_ConfigManager.GetNewsText());
 		
 		string version;
 		GetGame().GetVersion( version );
@@ -52,6 +52,7 @@ modded class MainMenu extends UIScriptedMenu
 		
 		return layoutRoot;
 	}
+
 	override bool OnClick( Widget w, int x, int y, int button )
 	{
 		if( button == MouseState.LEFT )
