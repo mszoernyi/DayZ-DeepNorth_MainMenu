@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{AF62F08EF5EA30CE}Mods/@DeepNorth_Server/DeepNorth_Loading/data/loading7.edds"
+ Author "shadow-5b0ft2fs"
+ ChangeDate -1185599961
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "loading7.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}
