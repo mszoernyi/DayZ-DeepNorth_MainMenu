@@ -1,12 +1,12 @@
 modded class LoadingScreen
 {
 	ref TStringArray myLoadingScreens = {
-		"DeepNorth_Loading\\data\\Loading1.edds"};
+		"DeepNorth_MainMenu\\data\\Loading1.edds"};
 
 	override void Show()
 	{		
 		string preel = myLoadingScreens.GetRandomElement();
-		m_ImageWidgetBackground.LoadMaskTexture("DeepNorth_Loading/data/ls_mask.paa");
+		m_ImageWidgetBackground.LoadMaskTexture("DeepNorth_MainMenu/data/ls_mask.paa");
 		m_ImageWidgetBackground.LoadImageFile(0, preel);   
         m_ImageLogoMid.Show(false);
 		m_ImageLogoCorner.Show(false);	    	
@@ -19,7 +19,7 @@ modded class LoadingScreen
 modded class LoginTimeBase extends UIScriptedMenu
 {
 	ref TStringArray myLoadingScreens = {
-		"DeepNorth_Loading\\data\\Loading1.edds"};
+		"DeepNorth_MainMenu\\data\\Loading1.edds"};
 
     override void Show()
     {
@@ -37,7 +37,7 @@ modded class LoginTimeBase extends UIScriptedMenu
 modded class LoginQueueBase extends UIScriptedMenu
 {
 	ref TStringArray myLoadingScreens = {
-		"DeepNorth_Loading\\data\\Loading1.edds"};
+		"DeepNorth_MainMenu\\data\\Loading1.edds"};
 
     override void Show()
     {
