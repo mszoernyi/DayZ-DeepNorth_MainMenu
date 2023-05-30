@@ -1,3 +1,4 @@
+@echo off
 echo unlinking P:\scripts from dayz
 rmdir "C:\Program Files (x86)\Steam\steamapps\common\DayZ\scripts" /S /Q
 
@@ -10,3 +11,5 @@ rmdir "C:\Program Files (x86)\Steam\steamapps\common\DayZ\DeepNorth_MainMenu" /S
 
 echo unlinking packed pbos
 rmdir "P:\@DeepNorth_MainMenu" /S /Q
+
+pause
