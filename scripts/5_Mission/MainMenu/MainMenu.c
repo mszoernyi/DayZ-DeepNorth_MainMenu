@@ -60,8 +60,7 @@ modded class MainMenu extends UIScriptedMenu
 			if( w == m_Play )
 			{
 				m_LastFocusedButton = m_Play;
-				Print("[DeepNorth_MainMenu] Play pressed, using '"+ m_ConfigManager.GetServerIp() +":"+ m_ConfigManager.GetServerPort() +"' to connect.");
-				g_Game.ConnectFromServerBrowser( m_ConfigManager.GetServerIp(), m_ConfigManager.GetServerPort(), "" );
+				g_Game.ConnectFromServerBrowser(MMip, MMport, "" );
 				return true;
 			}	
 			else if ( w == m_CustomizeCharacter )
